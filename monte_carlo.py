@@ -53,7 +53,7 @@ def plotter(limit=100000):
     plt.xticks([])
     plt.title("Standard Deviation")
     plt.xlabel("Amount of points placed")
-    plt.ylabel("Seconds")
+    plt.ylabel("Deviation")
     plt.show()
 
 plotter(1000)
