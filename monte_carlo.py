@@ -34,8 +34,11 @@ def error(num, tests):
     for i in range(tests):
         error_array.append(MC(num))
     std = np.std(error_array)
+    print("Error for ", num)
+    print('')
+    print(std)
+    print('')
     return std
-
 
 @jit
 def plotter(limit=100000):
