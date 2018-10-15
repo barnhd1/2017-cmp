@@ -19,7 +19,7 @@ def MC(N):
     for i in range(N):
         x = 2 * random()
         y = random()
-        if y < f1(x) and y > f2(x) and x > 0 and x < 0.6:
+        if y < f1(x) and y > f2(x):
             count += 1
     I = 2*count/N
     return I
