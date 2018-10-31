@@ -34,14 +34,14 @@ def game():
     background = canvas(title='Examples of Brownian Motion',
          width=700, height=700,
          center=vector(50,50,0), background=color.red)
-    s = sphere(pos=vector(0,0,0),radius=5,color=color.blue)
+    s = sphere(pos=vector(50,50,0),radius=5,color=color.blue, make_trail = True)
 
     for i in range(moves):
         rate(190)
         x = xmoves[i]
         y = ymoves[i]
         s.pos = vector(x,y,0)
-   # plt.plot(xmoves,ymoves, '-')
-   # plt.show()
+    plt.plot(xmoves,ymoves, '-')
+    plt.show()
 
 game()
